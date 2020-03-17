@@ -1,0 +1,235 @@
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.2
+ */
+
+/* clearfix */
+
+#owl,
+#owl-1 {
+	margin: 0;
+	background: transparent;
+	padding:0;
+}
+
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	z-index: 3;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+	
+.owl-carousel{
+	display: none;
+	position: relative;
+	padding: 0;
+	-ms-touch-action: pan-y;
+}
+.owl-carousel .item{
+	float:left;
+	position:relative;
+	overflow: hidden;
+	text-align: left;
+	padding: 0 0 31px;
+}
+.owl-carousel .owl-item{
+  float: left;
+}
+
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+	width: 100%;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
+
+/*
+* 	Owl Carousel Owl Theme 
+*	v1.3.2
+*/
+
+.owl-theme .owl-controls {
+    position: absolute;
+    right: -19px;
+    text-align: right;
+    top: 132px;
+    width: 104%;
+}
+
+/* Styling Next and Prev buttons */
+
+
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+
+
+.owl-pagination {
+    display: none;
+}
+
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	text-decoration: none;
+}
+
+/* Styling Pagination*/
+.owl-buttons{
+	position: relative;
+	z-index: 1;
+}
+.owl-buttons .owl-prev {
+	position: relative;
+	float: left;
+	display: inline-block;	
+}
+.owl-buttons .owl-next {
+	position: relative;
+	left: 0;
+	top: 0;
+	margin:0 0 0 4px;
+	display: inline-block;
+}
+
+.owl-prev:after,
+.owl-next:after {
+    content: '\f105';
+    font-family: "FontAwesome";
+    font-size: 21px;
+    color: #7cc2cb;
+    	-moz-transition: all 0.6s ease 0s;
+    	-webkit-transition: all 0.6s ease 0s;
+    	transition: all 0.6s ease 0s;
+}
+ .owl-prev:after {
+  content: '\f104';	
+}
+.owl-prev:hover:after {
+    content: '\f100';
+    color: #327881;
+  }
+.owl-next:hover:after {
+    content: '\f101';
+    color: #327881;
+  }
+
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span {
+	display: block!important;
+	position: relative;
+	width: 11px;
+	height: 11px;
+	margin-right: 3px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	-ms-border-radius: 500px;
+	-o-border-radius: 500px;
+	border-radius: 500px;
+	background: #fff;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	background: #f1173b;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #4f626e;
+	padding: 2px 10px;	
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	border-radius: 500px;
+}
+
+/* preloading images */
+
+.owl-item.loading{
+	min-height: 150px;
+	background: url(../images/AjaxLoader.gif) no-repeat center center;
+}
+
+
+@media only screen and (max-width: 1299px) {
+	
+}
+
+@media only screen and (max-width: 1199px) {
+
+
+}
+
+@media only screen and (max-width: 995px) {
+	
+
+
+}
+
+@media only screen and (max-width: 767px) {
+
+
+}
+
+@media only screen and (max-width: 480px) {
+	
+
+
+}
+
+@media only screen and (max-width: 320px) {
+
+}
